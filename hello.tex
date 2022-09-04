@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath}
+\begin{document}
+对于 $\forall$ x, y $\in$ C 与 $\forall$  $\lambda\in \lbrack 0, 1 \rbrack $ ,有
+$\lambda x + (1-\lambda)y \in C$
+
+
+由于全平面是一个凸集，故任何平面点集都可用全平面盖住，即能被凸集盖住，从而盖住该凸集的所有凸集的交集存在，即凸包存在． \\
+
+而如果某个凸集A有两个凸包M1与M2,则$M1 \bigcap M2$也能盖住凸集A，且$M1 \bigcap M2 \subset M1$，但M1是A的凸包，故$ M1 \subset M1 \bigcap M2$，故$M1 \bigcap M2 = M1$．同理$M1 \bigcap M2 = M2$．即$M1 = M2$
+
+
+$$
+\left|
+\begin{matrix}
+x_1 & y_1 & 1 \\
+x_2 & y_2 & 1 \\
+x_3 & y_3 & 1 \\
+\end{matrix}
+\right| = x_1y_2+x_3y_1+x_2y_3-x_3y_2-x_2y_1-x_1y_3
+$$
+
+$\mathcal{O}(n\log{}n)$
+
+\end{document}
