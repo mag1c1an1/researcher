@@ -1,19 +1,18 @@
 use plotters::prelude::*;
 
-struct Point(f64,f64);
+struct Point(f64, f64);
 
-fn segment_intersect(p1:Point,p2:Point,p3:Point,p4:Point) -> bool{
+fn segment_intersect(p1: Point, p2: Point, p3: Point, p4: Point) -> bool {
     true
 }
 
-fn on_segment(pi:Point,pj:Point,pk:Point) {
+fn on_segment(pi: Point, pj: Point, pk: Point) {
     todo!()
 }
 
 fn direction() -> f64 {
     0.0
 }
-
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let root = BitMapBackend::new("plotters-doc-data/0.png", (640, 480)).into_drawing_area();
@@ -39,7 +38,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .background_style(&WHITE.mix(0.8))
         .border_style(&BLACK)
         .draw()?;
-   
+
     root.present()?;
 
     Ok(())
