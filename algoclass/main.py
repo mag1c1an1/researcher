@@ -51,18 +51,17 @@ def dc(points: List[Point], ver: int):
             s2.append(points[a])
         if area(points[imin], pj, points[a]) <= 0:
             s4.append(points[a])
-    match ver:
-        case 1:
-            dc(s1, 1)
-            dc(s2, 1)
-        case 2:
-            dc(s3, 2)
-            dc(s4, 2)
-        case 3:
-            dc(s1, 1)
-            dc(s2, 1)
-            dc(s3, 2)
-            dc(s4, 2)
+    if ver == 1:
+        dc(s1, 1)
+        dc(s2, 1)
+    elif ver == 2:
+        dc(s3, 2)
+        dc(s4, 2)
+    elif ver == 3:
+        dc(s1, 1)
+        dc(s2, 1)
+        dc(s3, 2)
+        dc(s4, 2)
 
 
 if __name__ == '__main__':
@@ -92,4 +91,5 @@ if __name__ == '__main__':
         ax[1].plot([list1[i].x, list1[i + 1].x], [list1[i].y, list1[i + 1].y], 'k-')
     for i in range(len(list2) - 1):
         ax[1].plot([list2[i].x, list2[i + 1].x], [list2[i].y, list2[i + 1].y], 'k-')
-    plt.savefig('convexhull.png', dpi=300)
+    # plt.savefig('convexhull.png', dpi=300)
+    plt.show()
