@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.9.4)  7 SEP 2022 03:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.9.4)  8 SEP 2022 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,6 +331,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [lmroman10-regular]:mapping=tex-text;!
 [1
 
 ] (./hello.aux)
@@ -340,12 +342,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 6603 strings out of 476156
- 186858 string characters out of 5814964
- 529410 words of memory out of 5000000
- 27339 multiletter control sequences out of 15000+600000
+ 6614 strings out of 476156
+ 187725 string characters out of 5814964
+ 540410 words of memory out of 5000000
+ 27350 multiletter control sequences out of 15000+600000
  472607 words of font info for 50 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,7n,97p,360b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,7n,97p,447b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on hello.pdf (1 page).

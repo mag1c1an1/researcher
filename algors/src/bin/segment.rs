@@ -13,7 +13,6 @@ fn on_segment(pi: Point, pj: Point, pk: Point) {
 fn direction() -> f64 {
     0.0
 }
-
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let root = BitMapBackend::new("plotters-doc-data/0.png", (640, 480)).into_drawing_area();
     root.fill(&WHITE)?;
